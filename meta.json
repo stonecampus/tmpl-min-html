@@ -1,0 +1,25 @@
+{
+  "prompts": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "label": "Project name"
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "label": "Project description",
+      "default": "Minimal HTML pages"
+    },
+    "author": {
+      "type": "string",
+      "label": "Author"
+    },
+    "license": {
+      "type": "string",
+      "label": "License",
+      "default": "MIT"
+    }
+  },
+  "completeMessage": "{{#inPlace}}To get started:\n\n  open index.html in your browser{{else}}To get started:\n\n  cd {{destDirName}}\n  open index.html in your browser{{/inPlace}}"
+}
